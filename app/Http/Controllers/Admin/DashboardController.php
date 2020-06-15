@@ -16,6 +16,15 @@ class DashboardController extends Controller
         return view("admin.create");
     }
     function store(Request $request ){
+        $validatedData = $request->validate([
+            'name' => 'required|unique:rooms|max:255',
+            'image' => 'required',
+            'typeroom'=>"required",
+            'number'=>"required",
+            'area'=>"required",
+            'price'=>"required|min:100",
+
+        ]);
         $name=$request->name;
         $image=$request->file("image")->store("public");
         //save full adress of image
