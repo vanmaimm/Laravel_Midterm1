@@ -16,5 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/admin/index', "Admin\DashboardController@index");
 Route::get('/admin/create', "Admin\DashboardController@create");
 Route::post("/admin/create","Admin\DashboardController@store");
+Route::get('/homepage', "User\HomeController@index");

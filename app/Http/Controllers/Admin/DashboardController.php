@@ -8,6 +8,10 @@ use App\Room;
 
 class DashboardController extends Controller
 {
+    function index(){
+        $rooms=Room::all();
+        return view("admin.index",["rooms"=>$rooms]);
+    }
     function create(){
         return view("admin.create");
     }
@@ -29,5 +33,6 @@ class DashboardController extends Controller
         $room->price=$price;
         // store into database
         $room->save();
+        return redirect("/admin/index");
     }
 }
