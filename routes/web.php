@@ -19,4 +19,4 @@ Route::get('/', function () {
 Route::get('/admin/index', "Admin\DashboardController@index");
 Route::get('/admin/create', "Admin\DashboardController@create");
 Route::post("/admin/create","Admin\DashboardController@store");
-Route::get('/homepage', "User\HomeController@index");
+Route::get('/home', "User\HomeController@index");
