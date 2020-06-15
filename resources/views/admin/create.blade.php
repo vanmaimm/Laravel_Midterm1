@@ -14,7 +14,8 @@
 
 <body>
 
-    <form action="/admin/create" method="POST" class="form-horizontal" role="form" enctype="multipart/form-data">
+<div class="container">
+<form action="/admin/create" method="POST" class="form-horizontal" role="form" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
             <legend>Add room</legend>
@@ -71,8 +72,8 @@
             </ul>
         </div>
         @endif
-    </form>
-
+    </form> 
+</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

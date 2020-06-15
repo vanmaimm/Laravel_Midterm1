@@ -18,7 +18,7 @@
 
         <table class="table table-bordered table-hover">
             <thead>
-                <tr>
+                <tr style="background-color:#fff0b3">
                     <th>Name</th>
                     <th>Image</th>
                     <th>Type Room</th>

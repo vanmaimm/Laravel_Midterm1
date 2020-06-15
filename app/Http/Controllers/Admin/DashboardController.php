@@ -22,7 +22,7 @@ class DashboardController extends Controller
             'typeroom'=>"required",
             'number'=>"required",
             'area'=>"required",
-            'price'=>"required|min:100",
+            'price'=>"required",
 
         ]);
         $name=$request->name;
