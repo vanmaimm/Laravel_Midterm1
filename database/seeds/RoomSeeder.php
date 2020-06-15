@@ -16,7 +16,7 @@ class RoomSeeder extends Seeder
         for($i=0; $i<10; $i++){
             DB::table("rooms")->insert([
             "name"=>$faker->name, 
-            'image' => "",
+            'image' => "public/demo.PNG",
             "typeroom"=>"Phong family",
             "number"=>"4 nguoi",
             "area"=>"45m2",
